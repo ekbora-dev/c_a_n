@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN | Carte d'embarquement</title>
+    <link rel="shortcut icon" href="./img/CAN.png">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/embarquement.css">
+</head>
+
+<body>
+    <header class="menu">
+        <a href="./index.html"><img src="./img/CAN.png" alt="logo de la CAN"></a>
+        <nav>
+            <a class="active" href="./carte-embarquement.html">Carte d'embarquement</a>
+            <a href="./facture.html">Facture</a>
+            <a href="./dashboard.html">Tableau de bord</a>
+            <a href="./stats.html">Statistiques</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form class="formulaire-carte">
+                <label for="reservationId">Saisissez un numéro de réservation (carte d'embarquement) : </label>
+                <input type="text" name="idReservation" id="reservationId" placeholder="2" required>
+                <button id="rechercher">Rechercher</button>
+            </form>
+        </section>
+        <section class="cartes-embarquement">
+            <h2>Passager(s)</h2>
+            <article class="passager">
+                <button class="btn" id="passagerPrecedent"><< Précédent</button>
+                        <div class="carte">
+                            <div class="gauche">
+                                <img class="image-carte" src="./img/CAN.png" alt="Logo de la CAN (compagnie alsacienne de navigation)">
+                                <div class="nom">
+                                    <span class="gras">Nom</span>
+                                    <p id="nom"></p>
+                                    <span class="gras">Prénom</span>
+                                    <p id="prenom"></p>
+                                    <span class="gras">Catégorie</span>
+                                    <p id="categorie"></p>
+                                    <span class="gras">Prix</span>
+                                    <p id="prix"></p>
+                                </div>
+                            </div>
+                            <div class="droite">
+                                <h2>Carte d'embarquement (passager)</h2>
+                                <div class="info-generales">
+                                    <span class="gras">Réservation n°</span>
+                                    <p id="reservationIdPassager"></p>
+                                    <span class="gras">Nom</span>
+                                    <p id="nomFamille"></p>
+                                    <span class="gras">Gare de départ</span>
+                                    <p id="gareDepart"></p>
+                                    <span class="gras">Gare d'arrivée</span>
+                                    <p id="gareArrivee"></p>
+                                    <span class="gras">Date</span>
+                                    <p id="date"></p>
+                                    <span class="gras">Heure</span>
+                                    <p id="heureDepart"></p>
+                                    <span class="gras">Bateau</span>
+                                    <p id="bateau"></p>
+                                </div>
+                            </div>
+                        </div>
+                <button class="btn" id="passagerSuivant">Suivant >></button>
+            </article>
+            <h2>Véhicule(s)</h2>
+            <article class="vehicule">
+                <button id="vehiculePrecedent">
+                    << Précédent</button>
+                        <div class="carte">
+                            <div class="gauche">
+                                <img class="image-carte" src="./img/CAN.png" alt="Logo de la CAN (compagnie alsacienne de navigation)">
+                                <div class="nom">
+                                    <span class="gras">Catégorie</span>
+                                    <p id="libelleVehicule"></p>
+                                    <span class="gras">Nombre</span>
+                                    <p id="nombreVehicule"></p>
+                                    <span class="gras">Prix</span>
+                                    <p id="prixVehicule"></p>
+                                </div>
+                            </div>
+                            <div class="droite">
+                                <h2>Carte d'embarquement (véhicule)</h2>
+                                <div class="info-generales">
+                                    <span class="gras">Réservation n°</span>
+                                    <p id="reservationIdVehicule"></p>
+                                    <span class="gras">Nom</span>
+                                    <p id="nomFamilleVehicule"></p>
+                                    <span class="gras">Gare de départ</span>
+                                    <p id="gareDepartVehicule"></p>
+                                    <span class="gras">Gare d'arrivée</span>
+                                    <p id="gareArriveeVehicule"></p>
+                                    <span class="gras">Date</span>
+                                    <p id="dateVehicule"></p>
+                                    <span class="gras">Heure</span>
+                                    <p id="heureDepartVehicule"></p>
+                                    <span class="gras">Bateau</span>
+                                    <p id="bateauVehicule"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="vehiculeSuivant">Suivant >></button>
+            </article>
+        </section>
+    </main>
+
+    <script src="./js/carte.js"></script>
+</body>
+
+</html>

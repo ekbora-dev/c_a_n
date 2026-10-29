@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #00a2ffa4;
+}
+
+.menu img {
+    width: 150px;
+    height: auto;
+}
+
+.menu nav {
+    display: flex;
+    gap: 10px;
+}
+
+.menu nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.menu nav a.active {
+    background-color: #0080ffa4;
+}
+

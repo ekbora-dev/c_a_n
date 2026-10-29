@@ -1,0 +1,76 @@
+.formulaire-carte{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #90daffcb;
+    height: 100px;
+    border-top: 5px solid black;
+}
+
+.formulaire-carte input {
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.formulaire-carte button {
+   background: #0080ffa4;
+   border: 2px solid black;
+   border-radius: 10px;
+   cursor: pointer;
+   padding: 5px;
+}
+
+.facture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    border: 5px solid #7a7aff;
+    width: 50vw;
+    margin: 15px auto 15px auto;
+}
+
+.facture img {
+    width: 300px;
+    height: auto;
+}
+
+.facture h1 {
+    text-align: center;
+}
+
+.facture p {
+    align-self: flex-start;
+    font-size: 1.3em;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid black;
+    margin: 0;
+    text-align: center;
+    padding: 7px;
+}
+
+th {
+    background: #b4b4b4;
+}
+
+table tbody {
+    border: 2px solid black;
+}
+
+.droite{
+    width: 100%;
+    text-align: end;
+}

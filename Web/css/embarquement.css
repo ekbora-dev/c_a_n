@@ -1,0 +1,112 @@
+.formulaire-carte{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #90daffcb;
+    height: 100px;
+    border-top: 5px solid black;
+}
+
+.formulaire-carte input {
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.formulaire-carte button {
+   background: #0080ffa4;
+   border: 2px solid black;
+   border-radius: 10px;
+   cursor: pointer;
+   padding: 5px;
+}
+
+article button {
+    background-color: #00ffaa;
+    height: 100px;
+    transition: .3s ease all;
+    cursor: pointer;
+    margin: 90px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+article button:disabled{
+    background: red;
+    color: gray;
+    cursor:not-allowed;
+}
+
+.cartes-embarquement { /* La section qui contient les cartes d'embarquements */
+    display: flex;
+    flex-direction: column;
+}
+
+.passager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte{ /* La carte d'embarquement */
+    display: flex;
+    align-items: center;
+    background: #005effc4;
+    width: fit-content;
+    margin: 10px auto 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.carte p {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.carte-embarquement > div > img {
+    width: 150px;
+    height: auto;
+}
+
+.image-carte {
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: auto;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.vehicule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 480px){
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    .formulaire-carte{
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+    article {
+        flex-direction: column;
+    }
+    article button {
+        margin: 10px;
+    }
+    .carte {
+        flex-direction: column;
+    }
+}

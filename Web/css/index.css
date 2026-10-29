@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background-image: url(../img/groix-ile.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-can {
+    background-color: #faebd7a4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 280px;
+    height: auto;
+}
+
+.titre-accueil {
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    gap: 70px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #faebd7a4;
+    color: black;
+}

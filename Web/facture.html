@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN | Facture</title>
+    <link rel="shortcut icon" href="./img/CAN.png">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/facture.css">
+</head>
+
+<body>
+    <header class="menu">
+        <a href="./index.html"><img src="./img/CAN.png" alt="logo de la CAN"></a>
+        <nav>
+            <a href="./carte-embarquement.html">Carte d'embarquement</a>
+            <a class="active" href="./facture.html">Facture</a>
+            <a href="./dashboard.html">Tableau de bord</a>
+            <a href="./stats.html">Statistiques</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form class="formulaire-carte">
+                <label for="reservationId">Saisissez un numéro de réservation (facture) : </label>
+                <input type="text" name="idReservation" id="reservationId" placeholder="14" required>
+                <button id="rechercher">Rechercher</button>
+            </form>
+        </section>
+
+        <section class="facture">
+            <header class="tete-facture">
+                <img src="./img/CAN.png" alt="Logo de la CAN (compagnie alsacienne de navigation)">
+                <h1>Facture</h1>
+            </header>
+            <p id="villeDate"></p>
+
+            <p>
+                <span class="gras">N° de réservation : </span>
+                <span id="reservationIdFacture"></span>
+            </p>
+            
+            <p>
+                <span class="gras">Nom de réservation : </span>
+                <span id="nom"></span>
+            </p>
+
+            <p>
+                <span class="gras">Traversée : </span>
+                <span id="traversee"></span>
+            </p>
+
+            <p>
+                <span class="gras">Date : </span>
+                <span id="date"></span>
+            </p>
+            <p>
+                <span class="gras">Heure de départ : </span>
+                <span id="heureDepart"></span>
+            </p>
+            <p>
+                <span class="gras">Bateau : </span>
+                <span id="bateau"></span>
+            </p>
+
+            <p><span class="gras">Les passagers</span></p>
+            <table id="passagers">
+                <thead>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Nombre</th>
+                        <th>Prix unitaire</th>
+                        <th>Prix ligne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adulte 26 ans et plus</td>
+                        <td id="nbAdulte"></td>
+                        <td id="tarifAdulte"></td>
+                        <td id="totalAdulte"></td>
+                    </tr>
+                    <tr>
+                        <td>Jeune 18 à 25 ans inclus</td>
+                        <td id="nbJeune"></td>
+                        <td id="tarifJeune"></td>
+                        <td id="totalJeune"></td>
+                    </tr>
+                    <tr>
+                        <td>Enfant 4 à 17 inclus</td>
+                        <td id="nbEnfant"></td>
+                        <td id="tarifEnfant"></td>
+                        <td id="totalEnfant"></td>
+                    </tr>
+                    <tr>
+                        <td>Bébé moins de 4 ans</td>
+                        <td id="nbBebe"></td>
+                        <td id="tarifBebe"></td>
+                        <td id="totalBebe"></td>
+                    </tr>
+                    <tr>
+                        <td>Animal de compagnie</td>
+                        <td id="nbAnimalCie"></td>
+                        <td id="tarifAnimalCie"></td>
+                        <td id="totalAnimalCie"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="droite gras" id="sousTotalPassager"></p>
+
+            <p><span class="gras">Les véhicules</span></p>
+            <table id="vehicules">
+            </table>
+            <p class="droite gras" id="sousTotalVehicule"></p>
+
+            <p class="droite gras" id="total"></p>
+
+        </section>
+    </main>
+
+    <script src="./js/facture.js"></script>
+</body>
+
+</html>

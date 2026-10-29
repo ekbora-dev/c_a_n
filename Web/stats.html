@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN | Statistiques</title>
+    <link rel="shortcut icon" href="./img/CAN.png">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/stats.css">
+</head>
+
+<body>
+    <header class="menu">
+        <a href="./index.html"><img src="./img/CAN.png" alt="logo de la CAN"></a>
+        <nav>
+            <a href="./carte-embarquement.html">Carte d'embarquement</a>
+            <a href="./facture.html">Facture</a>
+            <a href="./dashboard.html">Tableau de bord</a>
+            <a class="active" href="./stats.html">Statistiques</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form class="formulaire-liaison">
+                <label for="liaisonId">Saisir un ID de liaison (entre 1 et 4 inclus) : </label>
+                <input type="text" name="liaisonId" id="liaisonId" placeholder="2" required>
+                <button id="rechercher">Rechercher</button>
+            </form>
+        </section>
+        <section id="stats">
+            
+        </section>
+    </main>
+    <script src="js/stats.js"></script>
+</body>
+
+</html>

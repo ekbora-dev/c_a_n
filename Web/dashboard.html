@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN | Tableau de bord</title>
+    <link rel="shortcut icon" href="./img/CAN.png">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header class="menu">
+        <a href="./index.html"><img src="./img/CAN.png" alt="logo de la CAN"></a>
+        <nav>
+            <a href="./carte-embarquement.html">Carte d'embarquement</a>
+			<a href="./facture.html">Facture</a>
+			<a class="active" href="./dashboard.html">Tableau de bord</a>
+			<a href="./stats.html">Statistiques</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form class="formulaire-liaison">
+                <label for="liaisonId">Saisir un ID de liaison (entre 1 et 4 inclus) : </label>
+                <input type="text" name="liaisonId" id="liaisonId" placeholder="3" required> <br>
+                <label for="date">Saisir une date (format 2025-11-JJ) (entre début et fin novembre 2025 inclus) : </label>
+                <input type="text" name="date" id="date" placeholder="2025-11-02" required>
+                <button id="rechercher">Rechercher</button>
+            </form>
+        </section>
+        <section id="tableauDeBord">
+
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
